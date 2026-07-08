@@ -1,0 +1,40 @@
+<svg width="900" height="420" viewBox="0 0 900 420" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:#05070d}.panel{fill:#080c16;stroke:#72f7ff;stroke-opacity:.28}.cellA{fill:#0b1323}.cellB{fill:#101b31}.cellC{fill:#151044}.txt{font-family:JetBrains Mono,Consolas,monospace;fill:#d6f8ff}.muted{fill:#7d8ca3}.cyan{fill:#72f7ff}.violet{fill:#9d7cff}.line{stroke:#72f7ff;stroke-opacity:.22}.pulse{animation:pulse 2.2s ease-in-out infinite}.float{animation:float 5s ease-in-out infinite}.dash{stroke-dasharray:7 10;animation:dash 18s linear infinite}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}@keyframes dash{to{stroke-dashoffset:-260}}
+  </style>
+  <rect class="bg" width="900" height="420" rx="24"/>
+  <rect x="1" y="1" width="898" height="418" rx="24" stroke="#72f7ff" stroke-opacity=".25"/>
+  <text class="txt" x="34" y="42" font-size="20">qfield404 game layer</text>
+  <text class="muted txt" x="34" y="68" font-size="14">chess • dice • royal path • quantum grid • tournament signal</text>
+
+  <g transform="translate(40 95)">
+    <rect class="panel" width="250" height="250" rx="16"/>
+    <text class="txt" x="20" y="32" font-size="15">quantum chess</text>
+    <g transform="translate(22 54)">
+      <script type="application/ecmascript"><![CDATA[]]></script>
+      <rect class="cellA" x="0" y="0" width="26" height="26"/><rect class="cellB" x="26" y="0" width="26" height="26"/><rect class="cellA" x="52" y="0" width="26" height="26"/><rect class="cellB" x="78" y="0" width="26" height="26"/><rect class="cellA" x="104" y="0" width="26" height="26"/><rect class="cellB" x="130" y="0" width="26" height="26"/><rect class="cellA" x="156" y="0" width="26" height="26"/><rect class="cellB" x="182" y="0" width="26" height="26"/>
+      <rect class="cellB" x="0" y="26" width="26" height="26"/><rect class="cellA" x="26" y="26" width="26" height="26"/><rect class="cellB" x="52" y="26" width="26" height="26"/><rect class="cellA" x="78" y="26" width="26" height="26"/><rect class="cellB" x="104" y="26" width="26" height="26"/><rect class="cellA" x="130" y="26" width="26" height="26"/><rect class="cellB" x="156" y="26" width="26" height="26"/><rect class="cellA" x="182" y="26" width="26" height="26"/>
+      <use href="#r1" y="52"/><use href="#r0" y="78"/><use href="#r1" y="104"/><use href="#r0" y="130"/><use href="#r1" y="156"/><use href="#r0" y="182"/>
+      <defs><g id="r0"><rect class="cellA" x="0" y="0" width="26" height="26"/><rect class="cellB" x="26" y="0" width="26" height="26"/><rect class="cellA" x="52" y="0" width="26" height="26"/><rect class="cellB" x="78" y="0" width="26" height="26"/><rect class="cellA" x="104" y="0" width="26" height="26"/><rect class="cellB" x="130" y="0" width="26" height="26"/><rect class="cellA" x="156" y="0" width="26" height="26"/><rect class="cellB" x="182" y="0" width="26" height="26"/></g><g id="r1"><rect class="cellB" x="0" y="0" width="26" height="26"/><rect class="cellA" x="26" y="0" width="26" height="26"/><rect class="cellB" x="52" y="0" width="26" height="26"/><rect class="cellA" x="78" y="0" width="26" height="26"/><rect class="cellB" x="104" y="0" width="26" height="26"/><rect class="cellA" x="130" y="0" width="26" height="26"/><rect class="cellB" x="156" y="0" width="26" height="26"/><rect class="cellA" x="182" y="0" width="26" height="26"/></g></defs>
+      <text class="cyan pulse" x="8" y="21" font-size="18">♜</text><text class="violet" x="86" y="99" font-size="18">♞</text><text class="cyan pulse" x="164" y="177" font-size="18">♚</text>
+    </g>
+  </g>
+
+  <g transform="translate(325 95)">
+    <rect class="panel" width="250" height="250" rx="16"/>
+    <text class="txt" x="20" y="32" font-size="15">quantum grid</text>
+    <g transform="translate(45 65)">
+      <rect class="cellA" width="150" height="150" rx="10"/><path class="line" d="M50 0V150M100 0V150M0 50H150M0 100H150"/>
+      <text class="cyan pulse" x="16" y="36" font-size="26">ψ</text><text class="violet" x="67" y="86" font-size="26">⚛</text><text class="cyan pulse" x="116" y="136" font-size="26">∑</text>
+    </g>
+    <text class="muted txt" x="36" y="238" font-size="12">collapse a cell via issue link</text>
+  </g>
+
+  <g transform="translate(610 95)">
+    <rect class="panel" width="250" height="250" rx="16"/>
+    <text class="txt" x="20" y="32" font-size="15">royal path</text>
+    <path class="dash" d="M30 190C70 70 126 220 166 92S220 84 226 44" fill="none" stroke="#72f7ff" stroke-width="2"/>
+    <g class="float"><circle class="cyan" cx="55" cy="172" r="10"/><circle class="violet" cx="110" cy="132" r="10"/><circle class="cyan" cx="166" cy="92" r="10"/><circle class="violet" cx="220" cy="58" r="10"/></g>
+    <text class="muted txt" x="34" y="238" font-size="12">ancient game / modern signal</text>
+  </g>
+</svg>
