@@ -1,0 +1,19 @@
+<svg width="900" height="260" viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:#0d1117}.grid{stroke:#00ff88;stroke-opacity:.12}.dot{fill:#00ff88;animation:pulse 3s ease-in-out infinite}.dot2{fill:#39ff14;animation:pulse 2s ease-in-out infinite}.path{fill:none;stroke:#00ff88;stroke-width:2;stroke-opacity:.75;stroke-dasharray:12 10;animation:dash 16s linear infinite}.label{font-family:JetBrains Mono,Consolas,monospace;fill:#c9d1d9}.small{fill:#7d8590}.ring{fill:none;stroke:#00ff88;stroke-opacity:.28;animation:ring 4s ease-in-out infinite;transform-origin:center}@keyframes pulse{0%,100%{opacity:.25}50%{opacity:1}}@keyframes dash{to{stroke-dashoffset:-260}}@keyframes ring{0%,100%{transform:scale(.98);opacity:.22}50%{transform:scale(1.04);opacity:.5}}
+  </style>
+  <rect class="bg" width="900" height="260" rx="18"/>
+  <rect x="1" y="1" width="898" height="258" rx="18" stroke="#00ff88" stroke-opacity=".25"/>
+  <g class="grid">
+    <path d="M40 40H860M40 80H860M40 120H860M40 160H860M40 200H860"/>
+    <path d="M80 25V225M160 25V225M240 25V225M320 25V225M400 25V225M480 25V225M560 25V225M640 25V225M720 25V225M800 25V225"/>
+  </g>
+  <path class="path" d="M70 196L150 120L230 150L310 72L390 105L470 58L550 130L630 85L710 112L830 45"/>
+  <g>
+    <circle class="dot" cx="70" cy="196" r="5"/><circle class="dot2" cx="150" cy="120" r="5"/><circle class="dot" cx="230" cy="150" r="5"/><circle class="dot2" cx="310" cy="72" r="5"/><circle class="dot" cx="390" cy="105" r="5"/><circle class="dot2" cx="470" cy="58" r="5"/><circle class="dot" cx="550" cy="130" r="5"/><circle class="dot2" cx="630" cy="85" r="5"/><circle class="dot" cx="710" cy="112" r="5"/><circle class="dot2" cx="830" cy="45" r="5"/>
+  </g>
+  <circle class="ring" cx="470" cy="130" r="72"/><circle class="ring" cx="470" cy="130" r="112"/><circle class="ring" cx="470" cy="130" r="148"/>
+  <text class="label" x="42" y="34" font-size="18">signal map</text>
+  <text class="small label" x="42" y="232" font-size="15">quiet systems • workflow intelligence • operational automation</text>
+  <text class="label" x="662" y="232" font-size="15">ghostlogix</text>
+</svg>
