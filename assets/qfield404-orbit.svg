@@ -1,0 +1,15 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg{fill:#05070d}.grid{stroke:#72f7ff;stroke-opacity:.09}.orbit{fill:none;stroke:#72f7ff;stroke-opacity:.45}.orbit2{fill:none;stroke:#9d7cff;stroke-opacity:.34}.txt{font-family:JetBrains Mono,Consolas,monospace;fill:#d6f8ff}.muted{fill:#7d8ca3}.particle{fill:#72f7ff;filter:url(#glow)}.p2{fill:#9d7cff;filter:url(#glow2)}.dash{stroke-dasharray:10 14;animation:dash 18s linear infinite}.spin{transform-origin:450px 150px;animation:spin 14s linear infinite}.spin2{transform-origin:450px 150px;animation:spin 20s linear infinite reverse}.pulse{animation:pulse 2.4s ease-in-out infinite}@keyframes dash{to{stroke-dashoffset:-360}}@keyframes spin{to{transform:rotate(360deg)}}@keyframes pulse{0%,100%{opacity:.35}50%{opacity:1}}</style>
+  <defs><filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><filter id="glow2"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter><radialGradient id="core"><stop offset="0" stop-color="#d6f8ff"/><stop offset=".35" stop-color="#72f7ff"/><stop offset="1" stop-color="#72f7ff" stop-opacity="0"/></radialGradient></defs>
+  <rect class="bg" width="900" height="300" rx="22"/>
+  <rect x="1" y="1" width="898" height="298" rx="22" stroke="#72f7ff" stroke-opacity=".25"/>
+  <g class="grid"><path d="M0 60H900M0 120H900M0 180H900M0 240H900M90 0V300M180 0V300M270 0V300M360 0V300M450 0V300M540 0V300M630 0V300M720 0V300M810 0V300"/></g>
+  <circle cx="450" cy="150" r="34" fill="url(#core)" class="pulse"/>
+  <g class="spin"><ellipse class="orbit dash" cx="450" cy="150" rx="260" ry="74"/><circle class="particle" cx="710" cy="150" r="7"/></g>
+  <g class="spin2"><ellipse class="orbit2 dash" cx="450" cy="150" rx="210" ry="116" transform="rotate(58 450 150)"/><circle class="p2" cx="620" cy="82" r="6"/></g>
+  <g class="spin"><ellipse class="orbit dash" cx="450" cy="150" rx="160" ry="46" transform="rotate(-38 450 150)"/><circle class="particle" cx="605" cy="188" r="5"/></g>
+  <text class="txt" x="36" y="52" font-size="18">qfield404 :: quantum field node</text>
+  <text class="muted txt" x="36" y="82" font-size="14">state: hidden • signal: coherent • noise: minimized</text>
+  <text class="txt" x="560" y="250" font-size="15">automation / data / systems</text>
+</svg>
