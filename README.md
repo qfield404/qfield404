@@ -93,9 +93,9 @@ repeat
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/joaolucas2018com-design/joaolucas2018com-design/output/github-contribution-grid-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/joaolucas2018com-design/joaolucas2018com-design/output/github-contribution-grid-snake.svg">
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/joaolucas2018com-design/joaolucas2018com-design/output/github-contribution-grid-snake.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="../../raw/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="../../raw/output/github-contribution-grid-snake.svg">
+  <img alt="github contribution snake" src="../../raw/output/github-contribution-grid-snake.svg">
 </picture>
 
 </div>
@@ -106,11 +106,11 @@ repeat
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=joaolucas2018com-design&theme=github-dark&hide_border=true&bg_color=0d1117&color=00ff88&line=00ff88&point=39ff14&area=true&area_color=00ff88&custom_title=ghostlogix%20activity%20signal" alt="activity graph" />
+<img src="./assets/ghostlogix-signal.svg" alt="activity graph" />
 
 <br>
 
-![views](https://komarev.com/ghpvc/?username=joaolucas2018com-design&style=for-the-badge&color=00ff88&label=signal+hits)
+![views](https://komarev.com/ghpvc/?username=ghostlogix&style=for-the-badge&color=00ff88&label=signal+hits)
 
 </div>
 
