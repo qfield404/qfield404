@@ -6,7 +6,7 @@
 
 <br><br>
 
-<img src="https://raw.githubusercontent.com/joaolucas2018com-design/joaolucas2018com-design/main/assets/ghostlogix-terminal.svg" alt="ghostlogix terminal" />
+<img src="./assets/ghostlogix-terminal.svg" alt="ghostlogix terminal" />
 
 <br><br>
 
@@ -65,7 +65,7 @@ repeat
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/joaolucas2018com-design/joaolucas2018com-design/main/assets/ghostlogix-signal.svg" alt="ghostlogix signal map" />
+<img src="./assets/ghostlogix-signal.svg" alt="ghostlogix signal map" />
 
 </div>
 
