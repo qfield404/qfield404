@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="190" viewBox="0 0 880 190" role="img" aria-label="João Lucas Luz, Analista de Dados e BI, Toledo PR">
+  <rect width="880" height="190" rx="6" fill="#121519"/>
+  <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+    <text x="40" y="82" font-size="40" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">João Lucas Luz</text>
+    <text x="40" y="116" font-size="18" fill="#9AA3AE">Analista de Dados e BI · Toledo, PR</text>
+    <text x="40" y="152" font-size="12.5" font-weight="600" fill="#6B7480" letter-spacing="1.6">POWER BI    PYTHON    SQL    MICROSOFT FABRIC</text>
+  </g>
+  <g transform="translate(560 46)">
+    <line x1="0" y1="98" x2="280" y2="98" stroke="#2C323A" stroke-width="2"/>
+    <g fill="none" stroke="#3A414B" stroke-width="2">
+      <rect x="0" y="0" width="28" height="90" rx="2"/><rect x="36" y="0" width="28" height="90" rx="2"/>
+      <rect x="72" y="0" width="28" height="90" rx="2"/><rect x="108" y="0" width="28" height="90" rx="2"/>
+      <rect x="144" y="0" width="28" height="90" rx="2"/><rect x="180" y="0" width="28" height="90" rx="2"/>
+      <rect x="216" y="0" width="28" height="90" rx="2"/><rect x="252" y="0" width="28" height="90" rx="2"/>
+    </g>
+    <g fill="#E8B421">
+      <rect x="4" y="32" width="20" height="54" rx="1"/><rect x="76" y="46" width="20" height="40" rx="1"/>
+      <rect x="112" y="20" width="20" height="66" rx="1"/><rect x="220" y="54" width="20" height="32" rx="1"/>
+    </g>
+  </g>
+</svg>
