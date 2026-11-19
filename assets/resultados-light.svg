@@ -2,36 +2,80 @@
 <style>
   .c { opacity: 0; animation: up .8s cubic-bezier(.2,.7,.2,1) forwards; }
   @keyframes up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  .hand { animation: turn 6s linear infinite; }
+  @keyframes turn { to { transform: rotate(360deg); } }
+  .sweep { animation: sweep 6s linear infinite; }
+  @keyframes sweep { to { stroke-dashoffset: 0; } }
+  .ring { animation: ring 1.6s cubic-bezier(.3,.7,.2,1) .6s forwards; }
+  @keyframes ring { to { stroke-dashoffset: 4.4; } }
+  .tick { stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw .5s ease-out 2.1s forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  .shrink { animation: shrink 1.6s cubic-bezier(.3,.7,.2,1) .9s forwards; }
+  @keyframes shrink { to { transform: scaleX(.333); } }
+  .doc { opacity: 0; animation: doc 3s ease-in-out infinite; }
+  @keyframes doc {
+    0% { opacity: 0; transform: translateX(-8px); }
+    15% { opacity: 1; transform: translateX(0); }
+    70% { opacity: 1; transform: translateX(34px); }
+    85%, 100% { opacity: 0; transform: translateX(42px); }
+  }
+  .pulse { animation: pulse 3s ease-in-out infinite; }
+  @keyframes pulse { 0%, 60% { transform: scale(1); } 75% { transform: scale(1.15); } 90%, 100% { transform: scale(1); } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; } .c { opacity: 1 !important; } .doc:first-child { opacity: 1 !important; }
+    .ring { stroke-dashoffset: 4.4; } .tick { stroke-dashoffset: 0; } .shrink { transform: scaleX(.333); }
+  }
 </style>
 <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
 <g class="c" style="animation-delay:0.00s">
-  <rect x="1" y="1" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D5DAE0"/>
+  <rect x="1" y="1" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D6DBE1"/>
   <rect x="1" y="23" width="3" height="40" fill="#B88400"/>
-  <text x="25" y="57" font-size="32" font-weight="700" fill="#15191E" letter-spacing="-0.5">1 por hora</text>
-  <text x="25" y="89" font-size="14.5" fill="#4F5863">Conciliação de estoque ERP × 10 armazéns,</text>
-  <text x="25" y="109" font-size="14.5" fill="#4F5863">antes eram 2 conferências manuais por dia</text>
+  <text x="25" y="57" font-size="32" font-weight="700" fill="#14181D" letter-spacing="-0.5">1 por hora</text>
+  <text x="25" y="89" font-size="14" fill="#4F5863">Conciliação de estoque ERP × 10</text>
+  <text x="25" y="109" font-size="14" fill="#4F5863">armazéns. Antes: 2 manuais por dia</text>
+  <g>
+  <circle cx="381" cy="65" r="28" fill="none" stroke="#D6DBE1" stroke-width="3"/>
+  <circle cx="381" cy="65" r="28" fill="none" stroke="#B88400" stroke-width="3" stroke-dasharray="176" stroke-dashoffset="176" transform="rotate(-90 381 65)" class="sweep"/>
+  <line x1="381" y1="65" x2="381" y2="45" stroke="#14181D" stroke-width="3" stroke-linecap="round" class="hand" style="transform-origin:381px 65px"/>
+  <circle cx="381" cy="65" r="3.5" fill="#14181D"/>
+</g>
 </g>
 <g class="c" style="animation-delay:0.12s">
-  <rect x="449" y="1" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D5DAE0"/>
+  <rect x="449" y="1" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D6DBE1"/>
   <rect x="449" y="23" width="3" height="40" fill="#B88400"/>
-  <text x="473" y="57" font-size="32" font-weight="700" fill="#15191E" letter-spacing="-0.5">97,5%</text>
-  <text x="473" y="89" font-size="14.5" fill="#4F5863">Precisão na conferência de documentos de</text>
-  <text x="473" y="109" font-size="14.5" fill="#4F5863">exportação, medida contra 24 dossiês</text>
+  <text x="473" y="57" font-size="32" font-weight="700" fill="#14181D" letter-spacing="-0.5">97,5%</text>
+  <text x="473" y="89" font-size="14" fill="#4F5863">Precisão na conferência de documentos</text>
+  <text x="473" y="109" font-size="14" fill="#4F5863">de exportação, em 24 dossiês</text>
+  <g>
+  <circle cx="829" cy="65" r="28" fill="none" stroke="#D6DBE1" stroke-width="6"/>
+  <circle cx="829" cy="65" r="28" fill="none" stroke="#1F8A5B" stroke-width="6" stroke-linecap="round" stroke-dasharray="176" stroke-dashoffset="176" transform="rotate(-90 829 65)" class="ring"/>
+  <path d="M819 65 l7 7 l13 -15" fill="none" stroke="#1F8A5B" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" class="tick"/>
+</g>
 </g>
 <g class="c" style="animation-delay:0.24s">
-  <rect x="1" y="147" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D5DAE0"/>
+  <rect x="1" y="147" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D6DBE1"/>
   <rect x="1" y="169" width="3" height="40" fill="#B88400"/>
-  <text x="25" y="203" font-size="32" font-weight="700" fill="#15191E" letter-spacing="-0.5">156 → 52</text>
-  <text x="25" y="235" font-size="14.5" fill="#4F5863">Canhotos que ainda pedem conferência</text>
-  <text x="25" y="255" font-size="14.5" fill="#4F5863">manual, em 158 páginas reais</text>
+  <text x="25" y="203" font-size="32" font-weight="700" fill="#14181D" letter-spacing="-0.5">156 → 52</text>
+  <text x="25" y="235" font-size="14" fill="#4F5863">Canhotos que pedem conferência</text>
+  <text x="25" y="255" font-size="14" fill="#4F5863">manual, em 158 páginas reais</text>
+  <g font-family="'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="10" fill="#7A838E">
+  <text x="337" y="189">ANTES 156</text>
+  <rect x="337" y="195" width="80" height="10" rx="2" fill="#AEB6BF"/>
+  <text x="337" y="223">DEPOIS 52</text>
+  <rect x="337" y="229" width="80" height="10" rx="2" fill="#B88400" class="shrink" style="transform-origin:337px 211px"/>
+</g>
 </g>
 <g class="c" style="animation-delay:0.36s">
-  <rect x="449" y="147" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D5DAE0"/>
+  <rect x="449" y="147" width="430" height="128" rx="8" fill="#FFFFFF" stroke="#D6DBE1"/>
   <rect x="449" y="169" width="3" height="40" fill="#B88400"/>
-  <text x="473" y="203" font-size="32" font-weight="700" fill="#15191E" letter-spacing="-0.5">20 a 40 notas</text>
-  <text x="473" y="235" font-size="14.5" fill="#4F5863">Por lote, faturadas do início ao fim</text>
-  <text x="473" y="255" font-size="14.5" fill="#4F5863">sem ninguém acompanhando</text>
+  <text x="473" y="203" font-size="32" font-weight="700" fill="#14181D" letter-spacing="-0.5">20 a 40 notas</text>
+  <text x="473" y="235" font-size="14" fill="#4F5863">Por lote, faturadas do início ao fim</text>
+  <text x="473" y="255" font-size="14" fill="#4F5863">sem ninguém acompanhando</text>
+  <g>
+  <g class="doc" style="animation-delay:0.0s"><rect x="783" y="193" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="201" x2="800" y2="201" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="207" x2="800" y2="207" stroke="#AEB6BF" stroke-width="1.5"/></g><g class="doc" style="animation-delay:0.75s"><rect x="783" y="193" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="201" x2="800" y2="201" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="207" x2="800" y2="207" stroke="#AEB6BF" stroke-width="1.5"/></g><g class="doc" style="animation-delay:1.5s"><rect x="783" y="193" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="201" x2="800" y2="201" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="207" x2="800" y2="207" stroke="#AEB6BF" stroke-width="1.5"/></g><g class="doc" style="animation-delay:2.25s"><rect x="783" y="193" width="22" height="28" rx="2" fill="#FFFFFF" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="201" x2="800" y2="201" stroke="#AEB6BF" stroke-width="1.5"/><line x1="788" y1="207" x2="800" y2="207" stroke="#AEB6BF" stroke-width="1.5"/></g>
+  <circle cx="857" cy="207" r="11" fill="#1F8A5B" class="pulse" style="transform-origin:857px 207px"/>
+  <path d="M852 207 l3.5 3.5 l6 -7" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
 </g>
 </g>
 </svg>

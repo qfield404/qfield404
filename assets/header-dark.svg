@@ -1,26 +1,87 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="880" height="190" viewBox="0 0 880 190" role="img" aria-label="João Lucas Luz, Analista de Dados e BI, Toledo PR">
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="260" viewBox="0 0 880 260" role="img" aria-label="João Lucas Luz, Analista de Dados e BI, Toledo PR. Animação: caminhão chega ao pátio, câmera lê a placa e o caminhão segue para a doca.">
+<defs>
+  <clipPath id="scene"><rect x="470" y="0" width="410" height="260"/></clipPath>
+  <clipPath id="type"><rect class="typer" x="40" y="40" width="0" height="60"/></clipPath>
+</defs>
 <style>
-  .in { opacity: 0; animation: in .9s cubic-bezier(.2,.7,.2,1) forwards; }
-  .d1 { animation-delay: .15s; } .d2 { animation-delay: .35s; }
+  .typer { animation: type 1.1s steps(14, end) .2s forwards; }
+  @keyframes type { to { width: 420px; } }
+  .caret { animation: caret 1.1s steps(14, end) .2s forwards, blink 1s steps(1) 1.3s infinite; }
+  @keyframes caret { from { transform: translateX(0); } to { transform: translateX(316px); } }
+  @keyframes blink { 0% { opacity: 1; transform: translateX(316px); } 50% { opacity: 0; transform: translateX(316px); } 100% { opacity: 1; transform: translateX(316px); } }
+  .in { opacity: 0; animation: in .8s cubic-bezier(.2,.7,.2,1) forwards; }
+  .d1 { animation-delay: 1.3s; } .d2 { animation-delay: 1.5s; } .d3 { animation-delay: 1.7s; }
   @keyframes in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
-  .f { fill: #E8B421; transform-box: fill-box; transform-origin: 50% 100%;
-        animation-name: dock; animation-iteration-count: infinite; animation-timing-function: ease-in-out; }
-  @keyframes dock {
-    0%, 12% { transform: scaleY(0); }
-    40%, 70% { transform: scaleY(1); }
-    100% { transform: scaleY(0); }
+
+  .truck { animation: drive 12s cubic-bezier(.45,.05,.35,1) infinite; }
+  @keyframes drive {
+    0%   { transform: translateX(0); opacity: 0; }
+    4%   { opacity: 1; }
+    22%, 36% { transform: translateX(150px); }
+    58%, 86% { transform: translateX(282px); opacity: 1; }
+    94%, 100% { transform: translateX(282px); opacity: 0; }
   }
-  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+  .beam { opacity: 0; animation: beam 12s ease-in-out infinite; }
+  @keyframes beam { 0%, 22% { opacity: 0; } 25%, 33% { opacity: .5; } 36%, 100% { opacity: 0; } }
+  .plate { opacity: 0; animation: plate 12s ease-out infinite; }
+  @keyframes plate {
+    0%, 28% { opacity: 0; transform: translateY(4px); }
+    32%, 88% { opacity: 1; transform: none; }
+    95%, 100% { opacity: 0; }
+  }
+  .lit { opacity: 0; animation: lit 12s ease-in-out infinite; }
+  @keyframes lit { 0%, 58% { opacity: 0; } 62%, 86% { opacity: 1; } 92%, 100% { opacity: 0; } }
+  .wheel { transform-box: fill-box; transform-origin: center; animation: spin 12s cubic-bezier(.45,.05,.35,1) infinite; }
+  @keyframes spin { 0% { transform: rotate(0); } 22%, 36% { transform: rotate(540deg); } 58%, 100% { transform: rotate(1080deg); } }
+  .rec { animation: rec 1.4s steps(1) infinite; }
+  @keyframes rec { 50% { opacity: 0; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .in, .plate, .lit { opacity: 1 !important; } .typer { width: 420px; } .truck { transform: translateX(282px); opacity: 1; } .caret { display: none; } }
 </style>
-<rect width="880" height="190" rx="6" fill="#121519"/>
+
+<rect width="880" height="260" rx="8" fill="#111418"/>
+
 <g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
-  <text class="in" x="40" y="82" font-size="40" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">João Lucas Luz</text>
-  <text class="in d1" x="40" y="116" font-size="18" fill="#9AA3AE">Analista de Dados e BI · Toledo, PR</text>
-  <text class="in d2" x="40" y="152" font-size="12.5" font-weight="600" fill="#6B7480" letter-spacing="1.6" xml:space="preserve">POWER BI  ·  PYTHON  ·  SQL  ·  MICROSOFT FABRIC</text>
+  <g clip-path="url(#type)">
+    <text x="40" y="90" font-size="44" font-weight="700" fill="#F1F2F4" letter-spacing="-0.6">João Lucas Luz</text>
+  </g>
+  <rect class="caret" x="40" y="54" width="3" height="42" fill="#E8B421"/>
+  <text class="in d1" x="40" y="128" font-size="19" fill="#9AA3AE">Analista de Dados e BI · Toledo, PR</text>
+  <text class="in d2" x="40" y="176" font-size="12.5" font-weight="600" fill="#6B7480" letter-spacing="1.6" xml:space="preserve">POWER BI  ·  PYTHON  ·  SQL  ·  MICROSOFT FABRIC</text>
+  <text class="in d3" x="40" y="214" font-size="14" fill="#9AA3AE">Painéis, integrações de dados e automação na logística</text>
 </g>
-<g transform="translate(560 46)">
-  <line x1="0" y1="98" x2="280" y2="98" stroke="#2C323A" stroke-width="2"/>
-  <g fill="none" stroke="#3A414B" stroke-width="2"><rect x="0" y="0" width="28" height="90" rx="2"/><rect x="36" y="0" width="28" height="90" rx="2"/><rect x="72" y="0" width="28" height="90" rx="2"/><rect x="108" y="0" width="28" height="90" rx="2"/><rect x="144" y="0" width="28" height="90" rx="2"/><rect x="180" y="0" width="28" height="90" rx="2"/><rect x="216" y="0" width="28" height="90" rx="2"/><rect x="252" y="0" width="28" height="90" rx="2"/></g>
-  <g><rect class="f" x="4" y="4" width="20" height="82" rx="1" style="animation-duration:9s;animation-delay:-0s"/><rect class="f" x="40" y="4" width="20" height="82" rx="1" style="animation-duration:11s;animation-delay:-2.5s"/><rect class="f" x="76" y="4" width="20" height="82" rx="1" style="animation-duration:8s;animation-delay:-1s"/><rect class="f" x="112" y="4" width="20" height="82" rx="1" style="animation-duration:13s;animation-delay:-4s"/><rect class="f" x="148" y="4" width="20" height="82" rx="1" style="animation-duration:10s;animation-delay:-6s"/><rect class="f" x="184" y="4" width="20" height="82" rx="1" style="animation-duration:12s;animation-delay:-1.5s"/><rect class="f" x="220" y="4" width="20" height="82" rx="1" style="animation-duration:9.5s;animation-delay:-3s"/><rect class="f" x="256" y="4" width="20" height="82" rx="1" style="animation-duration:14s;animation-delay:-5s"/></g>
+
+<g clip-path="url(#scene)">
+  <line x1="470" y1="214" x2="880" y2="214" stroke="#2A3038" stroke-width="2"/>
+  <line x1="470" y1="236" x2="880" y2="236" stroke="#2A3038" stroke-width="2" stroke-dasharray="10 12"/>
+
+  <rect x="800" y="96" width="80" height="118" fill="#171B21" stroke="#39414B" stroke-width="2"/>
+  <rect x="812" y="150" width="26" height="64" fill="none" stroke="#39414B" stroke-width="2"/>
+  <rect x="846" y="150" width="26" height="64" fill="none" stroke="#39414B" stroke-width="2"/>
+  <rect class="lit" x="814" y="152" width="22" height="60" fill="#E8B421"/>
+  <text x="812" y="128" font-family="'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11" fill="#6B7480">DOCA 1</text>
+  <text class="lit" x="812" y="142" font-family="'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace" font-size="11" font-weight="700" fill="#E8B421">OCUPADA</text>
+
+  <line x1="668" y1="214" x2="668" y2="70" stroke="#39414B" stroke-width="3"/>
+  <rect x="652" y="62" width="30" height="16" rx="3" fill="#9AA3AE"/>
+  <circle class="rec" cx="676" cy="70" r="2.5" fill="#E5484D"/>
+  <polygon class="beam" points="660,78 600,212 700,212" fill="#E8B421"/>
+
+  <g class="plate" font-family="'Cascadia Mono', Consolas, 'SFMono-Regular', Menlo, monospace">
+    <rect x="560" y="18" width="150" height="34" rx="5" fill="#171B21" stroke="#2A3038"/>
+    <text x="572" y="40" font-size="14" font-weight="700" fill="#F1F2F4" letter-spacing="1.5">ABC1D23</text>
+    <circle cx="690" cy="35" r="8" fill="#3FB27F"/>
+    <path d="M686 35 l3 3 l5 -6" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g class="truck">
+    <g transform="translate(380 0)">
+      <rect x="0" y="150" width="92" height="52" rx="2" fill="#D7DCE2"/>
+      <rect x="96" y="166" width="34" height="36" rx="4" fill="#9AA3AE"/>
+      <rect x="112" y="172" width="14" height="12" rx="2" fill="#111418" opacity=".7"/>
+      <circle class="wheel" cx="20" cy="206" r="8" fill="#0B0D10" stroke="#39414B" stroke-width="2" stroke-dasharray="4 3"/>
+      <circle class="wheel" cx="72" cy="206" r="8" fill="#0B0D10" stroke="#39414B" stroke-width="2" stroke-dasharray="4 3"/>
+      <circle class="wheel" cx="116" cy="206" r="8" fill="#0B0D10" stroke="#39414B" stroke-width="2" stroke-dasharray="4 3"/>
+    </g>
+  </g>
 </g>
 </svg>
