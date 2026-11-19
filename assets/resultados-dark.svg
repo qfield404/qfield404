@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="276" viewBox="0 0 880 276" role="img" aria-label="Resultados: conciliação de estoque 1 vez por hora; 97,5% de precisão em documentos de exportação; canhotos para conferência manual caíram de 156 para 52; lotes de 20 a 40 notas faturados sem acompanhamento">
+<style>
+  .c { opacity: 0; animation: up .8s cubic-bezier(.2,.7,.2,1) forwards; }
+  @keyframes up { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; opacity: 1 !important; } }
+</style>
+<g font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<g class="c" style="animation-delay:0.00s">
+  <rect x="1" y="1" width="430" height="128" rx="8" fill="#1A1E24" stroke="#2C323A"/>
+  <rect x="1" y="23" width="3" height="40" fill="#E8B421"/>
+  <text x="25" y="57" font-size="32" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">1 por hora</text>
+  <text x="25" y="89" font-size="14.5" fill="#9AA3AE">Conciliação de estoque ERP × 10 armazéns,</text>
+  <text x="25" y="109" font-size="14.5" fill="#9AA3AE">antes eram 2 conferências manuais por dia</text>
+</g>
+<g class="c" style="animation-delay:0.12s">
+  <rect x="449" y="1" width="430" height="128" rx="8" fill="#1A1E24" stroke="#2C323A"/>
+  <rect x="449" y="23" width="3" height="40" fill="#E8B421"/>
+  <text x="473" y="57" font-size="32" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">97,5%</text>
+  <text x="473" y="89" font-size="14.5" fill="#9AA3AE">Precisão na conferência de documentos de</text>
+  <text x="473" y="109" font-size="14.5" fill="#9AA3AE">exportação, medida contra 24 dossiês</text>
+</g>
+<g class="c" style="animation-delay:0.24s">
+  <rect x="1" y="147" width="430" height="128" rx="8" fill="#1A1E24" stroke="#2C323A"/>
+  <rect x="1" y="169" width="3" height="40" fill="#E8B421"/>
+  <text x="25" y="203" font-size="32" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">156 → 52</text>
+  <text x="25" y="235" font-size="14.5" fill="#9AA3AE">Canhotos que ainda pedem conferência</text>
+  <text x="25" y="255" font-size="14.5" fill="#9AA3AE">manual, em 158 páginas reais</text>
+</g>
+<g class="c" style="animation-delay:0.36s">
+  <rect x="449" y="147" width="430" height="128" rx="8" fill="#1A1E24" stroke="#2C323A"/>
+  <rect x="449" y="169" width="3" height="40" fill="#E8B421"/>
+  <text x="473" y="203" font-size="32" font-weight="700" fill="#F1F2F4" letter-spacing="-0.5">20 a 40 notas</text>
+  <text x="473" y="235" font-size="14.5" fill="#9AA3AE">Por lote, faturadas do início ao fim</text>
+  <text x="473" y="255" font-size="14.5" fill="#9AA3AE">sem ninguém acompanhando</text>
+</g>
+</g>
+</svg>
